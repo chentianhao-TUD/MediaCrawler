@@ -10,7 +10,7 @@
 
 # 基础配置
 PLATFORM = "dy"  # 平台，xhs | dy | ks | bili | wb | tieba | zhihu
-KEYWORDS = "萌娃,育儿,宝宝,人类幼崽"  # 关键词搜索配置，以英文逗号分隔
+KEYWORDS = "萌娃,育儿,宝宝,人类幼崽,母婴,亲子,早教,孩子"  # 关键词搜索配置，以英文逗号分隔
 LOGIN_TYPE = "qrcode"  # qrcode or phone or cookie
 COOKIES = ""
 CRAWLER_TYPE = (
@@ -71,7 +71,7 @@ USER_DATA_DIR = "%s_user_data_dir"  # %s will be replaced by platform name
 START_PAGE = 1
 
 # 爬取视频/帖子的数量控制
-CRAWLER_MAX_NOTES_COUNT = 1000
+CRAWLER_MAX_NOTES_COUNT = 100000
 
 # 并发爬虫数量控制
 MAX_CONCURRENCY_NUM = 6
