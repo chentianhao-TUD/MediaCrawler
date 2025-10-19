@@ -9,8 +9,8 @@
 # 使用本代码即表示您同意遵守上述原则和LICENSE中的所有条款。
 
 # 基础配置
-PLATFORM = "xhs"  # 平台，xhs | dy | ks | bili | wb | tieba | zhihu
-KEYWORDS = "编程副业,编程兼职"  # 关键词搜索配置，以英文逗号分隔
+PLATFORM = "dy"  # 平台，xhs | dy | ks | bili | wb | tieba | zhihu
+KEYWORDS = "萌娃,育儿,宝宝,人类幼崽"  # 关键词搜索配置，以英文逗号分隔
 LOGIN_TYPE = "qrcode"  # qrcode or phone or cookie
 COOKIES = ""
 CRAWLER_TYPE = (
@@ -62,7 +62,7 @@ BROWSER_LAUNCH_TIMEOUT = 30
 AUTO_CLOSE_BROWSER = True
 
 # 数据保存类型选项配置,支持四种类型：csv、db、json、sqlite, 最好保存到DB，有排重的功能。
-SAVE_DATA_OPTION = "json"  # csv or db or json or sqlite
+SAVE_DATA_OPTION = "db"  # csv or db or json or sqlite
 
 # 用户浏览器缓存的浏览器文件配置
 USER_DATA_DIR = "%s_user_data_dir"  # %s will be replaced by platform name
@@ -71,16 +71,16 @@ USER_DATA_DIR = "%s_user_data_dir"  # %s will be replaced by platform name
 START_PAGE = 1
 
 # 爬取视频/帖子的数量控制
-CRAWLER_MAX_NOTES_COUNT = 15
+CRAWLER_MAX_NOTES_COUNT = 1000
 
 # 并发爬虫数量控制
-MAX_CONCURRENCY_NUM = 1
+MAX_CONCURRENCY_NUM = 6
 
 # 是否开启爬媒体模式（包含图片或视频资源），默认不开启爬媒体
 ENABLE_GET_MEIDAS = False
 
 # 是否开启爬评论模式, 默认开启爬评论
-ENABLE_GET_COMMENTS = True
+ENABLE_GET_COMMENTS = False
 
 # 爬取一级评论的数量控制(单视频/帖子)
 CRAWLER_MAX_COMMENTS_COUNT_SINGLENOTES = 10
